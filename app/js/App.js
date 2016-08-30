@@ -27,8 +27,9 @@ class App extends React.Component {
       currentUser: {},
       snippets: {snippetArr: [{id:0, snippet:"<div>This is the first snippet of code</div>"}, {id:1, snippet: "<div>This is the second snippet</div>"}] },
       checkedBoxArr: [],
-      checkboxes: '',
-      displaySnippets: []
+      checkboxes: [],
+      displaySnippets: [],
+      boxesArr: []
     };
 
     this.onUserChange = this.onUserChange.bind(this);    
@@ -50,19 +51,27 @@ class App extends React.Component {
     this.unsubscribe = CurrentUserStore.listen(this.onUserChange);
     CurrentUserActions.checkLoginStatus();
     this.setState({
-        checkboxes: document.querySelectorAll('input')
+        checkboxes: document.querySelectorAll('input'),
+        boxesArr: this.state.boxesArr.push(document.querySelectorAll(".box"))
       })
-    console.log(this.state.checkedBoxArr);
+    console.log(this.state.boxesArr);
+
+
   }
 
   componentWillUnmount() {
     this.unsubscribe();
   }
 
-  isChecked() {
+  // boxIsClicked() {
+  //   console.log("The box was clicked")
+  // }
+
+
+  isChecked(){
     console.log("isChecked function starting");
 
-    for(var i = 0; i < this.state.checkboxes.length; i++){
+    for(let i of this.state.checkboxes){
       if(this.state.checkboxes[i].checked === true){
         console.log("isChecked function");
         this.state.checkedBoxArr.push(this.state.checkboxes[i].value);
@@ -77,12 +86,12 @@ class App extends React.Component {
           this.state.displaySnippets.push(this.state.snippets.snippetArr[j]);
         }
       }
-    }
+    }}
     this.setState({
       displaySnippets: this.state.displaySnippets
     })
     return console.log(this.state.displaySnippets);
-  }
+  }  
 
   renderChildren() {
     return React.cloneElement(this.props.children, {
@@ -99,7 +108,7 @@ class App extends React.Component {
 
         <Header />
 
-        <Form snippets={this.state.displaySnippets}  isChecked={this.isChecked}/>
+        <Form snippets={this.state.displaySnippets}  isChecked={this.isChecked} boxIsClicked={this.boxIsClicked}/>
 
         {this.renderChildren()}
 

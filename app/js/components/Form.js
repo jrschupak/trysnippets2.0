@@ -38,6 +38,13 @@ class Form extends React.Component {
       margin: "50px"
     }
 
+    var box = {
+      width: "100px",
+      height: "100px",
+      background: "gray",
+      margin: "10px"
+    }
+
 
     return (
       <div className="col-sm-12" >
@@ -46,6 +53,8 @@ class Form extends React.Component {
             <p className="title" style={title}>TrySnippets</p>
           </div>
           <div className="wrapper-form col-md-6 col-md-offset-3 text-center">
+            <div className="box" style={box}></div>
+            <div className="box" style={box}></div>
             <form className="checkboxes" style={form}>    
               <input  type="checkbox" value={0} style={input}/><span style={inputSpan}>Snippet1</span>           
               <input  type="checkbox" value={1} style={input}/><span style={inputSpan}>Snippet2</span>
