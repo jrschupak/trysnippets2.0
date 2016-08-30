@@ -55,7 +55,7 @@ class Form extends React.Component {
           
         </div>
 
-        <Snippets />
+        <Snippets snippets={this.props.snippets}/>
 
       </div>
     );

@@ -7,7 +7,7 @@ import CurrentUserStore   from './stores/CurrentUserStore';
 import Header             from './components/Header';
 import Footer             from './components/Footer';
 import Form               from './components/Form';
-
+import Snippets           from './components/Snippets'
 
 const propTypes = {
   params: React.PropTypes.object,
@@ -23,15 +23,15 @@ class App extends React.Component {
   constructor(props) {
     super(props);
 
-    this.onUserChange = this.onUserChange.bind(this);
-
     this.state = {
+      currentUser: {},
       snippets: {snippetArr: [{id:0, snippet:"<div>This is the first snippet of code</div>"}, {id:1, snippet: "<div>This is the second snippet</div>"}] },
       checkedBoxArr: [],
       checkboxes: '',
-      displaySnippets: [],
-      currentUser: {}
+      displaySnippets: []
     };
+
+    this.onUserChange = this.onUserChange.bind(this);    
   }
 
   onUserChange(err, user) {
@@ -49,10 +49,39 @@ class App extends React.Component {
   componentDidMount() {
     this.unsubscribe = CurrentUserStore.listen(this.onUserChange);
     CurrentUserActions.checkLoginStatus();
+    this.setState({
+        checkboxes: document.querySelectorAll('input')
+      })
+    console.log(this.state.checkedBoxArr);
   }
 
   componentWillUnmount() {
     this.unsubscribe();
+  }
+
+  isChecked() {
+    console.log("isChecked function starting");
+
+    for(var i = 0; i < this.state.checkboxes.length; i++){
+      if(this.state.checkboxes[i].checked === true){
+        console.log("isChecked function");
+        this.state.checkedBoxArr.push(this.state.checkboxes[i].value);
+        console.log("checkboxarr ", this.state.checkedBoxArr);
+      }
+    }
+    for(var i = 0; i < this.state.checkedBoxArr.length; i++){
+      console.log("checkedBoxArr[i] ", this.state.checkedBoxArr[i]);
+      for(var j = 0; j < this.state.snippets.snippetArr.length; j++){
+        console.log("snippets[j] ", this.state.snippets.snippetArr[j]);
+        if(this.state.checkedBoxArr[i] == this.state.snippets.snippetArr[j].id){
+          this.state.displaySnippets.push(this.state.snippets.snippetArr[j]);
+        }
+      }
+    }
+    this.setState({
+      displaySnippets: this.state.displaySnippets
+    })
+    return console.log(this.state.displaySnippets);
   }
 
   renderChildren() {
@@ -70,7 +99,7 @@ class App extends React.Component {
 
         <Header />
 
-        <Form />
+        <Form snippets={this.state.displaySnippets}  isChecked={this.isChecked}/>
 
         {this.renderChildren()}
 

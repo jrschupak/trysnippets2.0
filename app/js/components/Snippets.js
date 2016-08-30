@@ -4,8 +4,17 @@ import React from 'react';
 
 class Snippets extends React.Component {
 
-  constructor(props) {
-    super(props);
+  componentWillMount(){
+    console.log("Snippets.js ", this.props.snippets);
+
+  }
+
+
+
+  snippetsContainer(){
+    var snipCont = document.querySelector('snippets-container');
+    console.log(snipCont);
+    
   }
 
   render() {
