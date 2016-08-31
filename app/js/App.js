@@ -86,12 +86,15 @@ class App extends React.Component {
           this.state.displaySnippets.push(this.state.snippets.snippetArr[j]);
         }
       }
-    }}
+    }
     this.setState({
       displaySnippets: this.state.displaySnippets
     })
     return console.log(this.state.displaySnippets);
-  }  
+   } 
+  }
+
+     
 
   renderChildren() {
     return React.cloneElement(this.props.children, {
