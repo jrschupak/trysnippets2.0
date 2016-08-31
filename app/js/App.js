@@ -63,36 +63,36 @@ class App extends React.Component {
     this.unsubscribe();
   }
 
-  // boxIsClicked() {
-  //   console.log("The box was clicked")
-  // }
-
-
-  isChecked(){
-    console.log("isChecked function starting");
-
-    for(let i of this.state.checkboxes){
-      if(this.state.checkboxes[i].checked === true){
-        console.log("isChecked function");
-        this.state.checkedBoxArr.push(this.state.checkboxes[i].value);
-        console.log("checkboxarr ", this.state.checkedBoxArr);
-      }
-    }
-    for(var i = 0; i < this.state.checkedBoxArr.length; i++){
-      console.log("checkedBoxArr[i] ", this.state.checkedBoxArr[i]);
-      for(var j = 0; j < this.state.snippets.snippetArr.length; j++){
-        console.log("snippets[j] ", this.state.snippets.snippetArr[j]);
-        if(this.state.checkedBoxArr[i] == this.state.snippets.snippetArr[j].id){
-          this.state.displaySnippets.push(this.state.snippets.snippetArr[j]);
-        }
-      }
-    }
-    this.setState({
-      displaySnippets: this.state.displaySnippets
-    })
-    return console.log(this.state.displaySnippets);
-   } 
+  boxIsClicked() {
+    console.log("The box was clicked");
   }
+
+
+  // isChecked(){
+  //   console.log("isChecked function starting");
+
+  //   for(let i of this.state.checkboxes){
+  //     if(this.state.checkboxes[i].checked === true){
+  //       console.log("isChecked function");
+  //       this.state.checkedBoxArr.push(this.state.checkboxes[i].value);
+  //       console.log("checkboxarr ", this.state.checkedBoxArr);
+  //     }
+  //   }
+  //   for(var i = 0; i < this.state.checkedBoxArr.length; i++){
+  //     console.log("checkedBoxArr[i] ", this.state.checkedBoxArr[i]);
+  //     for(var j = 0; j < this.state.snippets.snippetArr.length; j++){
+  //       console.log("snippets[j] ", this.state.snippets.snippetArr[j]);
+  //       if(this.state.checkedBoxArr[i] == this.state.snippets.snippetArr[j].id){
+  //         this.state.displaySnippets.push(this.state.snippets.snippetArr[j]);
+  //       }
+  //     }
+  //   }
+  //   this.setState({
+  //     displaySnippets: this.state.displaySnippets
+  //   })
+  //   return console.log(this.state.displaySnippets);
+  //  } 
+  // }
 
      
 
