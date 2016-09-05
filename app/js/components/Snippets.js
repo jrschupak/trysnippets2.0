@@ -21,7 +21,7 @@ class Snippets extends React.Component {
     return (
       <div className="snippets-container" >{this.props.snippets.map(function(placeData) {
               console.log(placeData);
-              return <div  key={placeData.id} className='zip-comp'>
+              return <div  key={placeData.id}>
                         <p>{placeData.snippet}</p>
                      </div>
               })}

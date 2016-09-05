@@ -29,7 +29,8 @@ class App extends React.Component {
       checkedBoxArr: [],
       checkboxes: [],
       displaySnippets: [],
-      boxesArr: []
+      boxesArr: [],
+      boxClicked: {}
     };
 
     this.onUserChange = this.onUserChange.bind(this);    
@@ -63,8 +64,11 @@ class App extends React.Component {
     this.unsubscribe();
   }
 
-  boxIsClicked() {
+  boxIsClicked(e) {
     console.log("The box was clicked");
+    console.log(e.target);
+    var clickedBox = e.target.getAttribute('value');
+    console.log(clickedBox);
   }
 
 
