@@ -29,16 +29,9 @@ class Snippets extends React.Component {
     return (
       <div>
         <div className="snippets-cont">
-          <p id={0} style={displayNone}>Hello snippets</p>
+          <p id={0} style={displayNone}>Snippet of Code for box 1</p>
         </div>
 
-        <div className="snippets-container" > {this.props.snippets.map(function(placeData) {
-              console.log(placeData);
-              return <div  key={placeData.id}>
-                        <p>{placeData.snippet}</p>
-                     </div>
-              })}
-        </div>
 
       </div>
     );

@@ -78,36 +78,7 @@ class App extends React.Component {
 
     // grab the style attribute and switch it with a new var style that has no display: "none"
     snippet.style = 'display';
-  }
-
-
-  // isChecked(){
-  //   console.log("isChecked function starting");
-
-  //   for(let i of this.state.checkboxes){
-  //     if(this.state.checkboxes[i].checked === true){
-  //       console.log("isChecked function");
-  //       this.state.checkedBoxArr.push(this.state.checkboxes[i].value);
-  //       console.log("checkboxarr ", this.state.checkedBoxArr);
-  //     }
-  //   }
-  //   for(var i = 0; i < this.state.checkedBoxArr.length; i++){
-  //     console.log("checkedBoxArr[i] ", this.state.checkedBoxArr[i]);
-  //     for(var j = 0; j < this.state.snippets.snippetArr.length; j++){
-  //       console.log("snippets[j] ", this.state.snippets.snippetArr[j]);
-  //       if(this.state.checkedBoxArr[i] == this.state.snippets.snippetArr[j].id){
-  //         this.state.displaySnippets.push(this.state.snippets.snippetArr[j]);
-  //       }
-  //     }
-  //   }
-  //   this.setState({
-  //     displaySnippets: this.state.displaySnippets
-  //   })
-  //   return console.log(this.state.displaySnippets);
-  //  } 
-  // }
-
-     
+  }  
 
   renderChildren() {
     return React.cloneElement(this.props.children, {
