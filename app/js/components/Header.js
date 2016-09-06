@@ -9,10 +9,17 @@ class Header extends React.Component {
   }
 
   render() {
+    var title = {
+      fontSize: "20px",
+      color: "white",
+      padding: "20px"
+    }
     return (
       <header>
 
-        Header
+       <div className="wrapper-title">
+          <p className="title" style={title}>TrySnippets</p>
+       </div>
 
       </header>
     );
