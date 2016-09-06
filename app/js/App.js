@@ -30,7 +30,8 @@ class App extends React.Component {
       checkboxes: [],
       displaySnippets: [],
       boxesArr: [],
-      boxClicked: {}
+      boxClicked: {},
+      snippet: " "
     };
 
     this.onUserChange = this.onUserChange.bind(this);    
@@ -69,6 +70,13 @@ class App extends React.Component {
     console.log(e.target);
     var clickedBox = e.target.getAttribute('value');
     console.log(clickedBox);
+
+    console.log(document.querySelector('.snippet-cont'))
+
+    var snippet = document.getElementById(clickedBox);
+    console.log(snippet)
+    // grab the style attribute and switch it with a new var style that has no display: "none"
+    
   }
 
 

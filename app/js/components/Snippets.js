@@ -17,14 +17,26 @@ class Snippets extends React.Component {
     
   }
 
+  
   render() {
+
+    var displayNone = {
+    display: "none"
+  }
     return (
-      <div className="snippets-container" >{this.props.snippets.map(function(placeData) {
+      <div>
+        <div className="snippets-cont">
+          <p id={0} style={displayNone}>Hello snippets</p>
+        </div>
+
+        <div className="snippets-container" > {this.props.snippets.map(function(placeData) {
               console.log(placeData);
               return <div  key={placeData.id}>
                         <p>{placeData.snippet}</p>
                      </div>
               })}
+        </div>
+
       </div>
     );
   }
