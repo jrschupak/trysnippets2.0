@@ -74,7 +74,8 @@ class App extends React.Component {
     console.log(document.querySelector('.snippet-cont'))
 
     var snippet = document.getElementById(clickedBox);
-    console.log(snippet)
+    console.log(snippet);
+
     // grab the style attribute and switch it with a new var style that has no display: "none"
     
   }

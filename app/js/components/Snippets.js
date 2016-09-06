@@ -22,7 +22,10 @@ class Snippets extends React.Component {
 
     var displayNone = {
     display: "none"
-  }
+    } 
+    var display = {
+
+    }
     return (
       <div>
         <div className="snippets-cont">
