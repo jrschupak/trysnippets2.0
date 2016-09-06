@@ -42,7 +42,8 @@ class Form extends React.Component {
       width: "100px",
       height: "100px",
       background: "gray",
-      margin: "10px"
+      display: "inline-flex",
+      margin: "0px 10px"
     }
 
 
@@ -52,9 +53,9 @@ class Form extends React.Component {
           <div className="wrapper-title">
             <p className="title" style={title}>TrySnippets</p>
           </div>
-          <div className="wrapper-form col-md-6 col-md-offset-3 text-center">
-            <div className="box" style={box} onClick={this.props.boxIsClicked} value={0}>Box for snippet 1</div>
-            <div className="box" style={box} onClick={this.props.boxIsClicked} value={1}>Box for snippet 2</div>
+          <div className="wrapper-boxes col-md-8 text-center">
+            <div className="box col-md-2" style={box} onClick={this.props.boxIsClicked} value={0}>Box for snippet 1</div>
+            <div className="box col-md-2" style={box} onClick={this.props.boxIsClicked} value={1}>Box for snippet 2</div>
             
           </div>
           
