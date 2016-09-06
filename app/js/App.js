@@ -77,7 +77,7 @@ class App extends React.Component {
     console.log(snippet);
 
     // grab the style attribute and switch it with a new var style that has no display: "none"
-    
+    snippet.style = 'display';
   }
 
 
