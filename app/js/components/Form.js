@@ -45,8 +45,8 @@ class Form extends React.Component {
       <div className="col-sm-12" >
         <div className="wrapper">
           <div className="wrapper-boxes text-center">
-            <div className="box col-md-2" style={box} onClick={this.props.boxIsClicked} value={0}>Box for snippet 1</div>
-            <div className="box col-md-2" style={box} onClick={this.props.boxIsClicked} value={1}>Box for snippet 2</div>          
+            <div className="box col-md-2" style={box} onClick={this.props.boxIsClicked} value={0}><p>Box for snippet 1</p></div>
+            <div className="box col-md-2" style={box} onClick={this.props.boxIsClicked} value={1}><p>Box for snippet 2</p></div>          
           </div>
           
         </div>

@@ -20,11 +20,11 @@ class HomePage extends React.Component {
         <section className="home-page">
 
           <div>
-            Home
+            
           </div>
 
           <div>
-            <Link to="/search">Search</Link>
+            <Link to="/search"></Link>
           </div>
 
         </section>

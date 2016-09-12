@@ -9,10 +9,16 @@ class Footer extends React.Component{
   }
 
   render() {
-    return (
-      <footer>
 
-        Footer
+    var footer = {
+      position: "absolute",
+      bottom: "0px"
+    }
+
+    return (
+      <footer style={footer}>
+
+      &copy; 2016 trysnippets
 
       </footer>
     );
