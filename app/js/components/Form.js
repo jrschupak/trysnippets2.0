@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import Snippets           from './Snippets'
+import Snippets from './Snippets'
 
 class Form extends React.Component {
 

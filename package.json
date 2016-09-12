@@ -64,6 +64,11 @@
   "scripts": {
     "lint": "NODE_ENV=test ./node_modules/.bin/gulp lint",
     "test": "NODE_ENV=test ./node_modules/.bin/gulp test",
-    "build": "NODE_ENV=production ./node_modules/.bin/gulp prod"
+    "build": "NODE_ENV=production ./node_modules/.bin/gulp prod",
+    "production": "webpack -p",
+    "start-dev": "webpack-dev-server --progress --inline --hot"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
   }
 }
