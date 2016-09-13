@@ -12,7 +12,7 @@ class Footer extends React.Component{
     return (
       <footer>
 
-        Footer
+        &copy; 2016 trysnippets
 
       </footer>
     );
