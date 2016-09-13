@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var PORT = process.env.PORT || 8080;
-app.use(express.static('_dirname'));
+app.use(express.static('/app'));
 app.get('*', (req, res) => {
 	res.sendFile(path.resolve(_dirname, 'index.html'))
 });
