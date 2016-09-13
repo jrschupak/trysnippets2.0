@@ -89,7 +89,7 @@ class App extends React.Component {
       console.log('else statement display');
       console.log(snippet.getAttribute('style'));
       snippet.setAttribute('style', 'display');
-    }
+    } //end of if statement
     
   }  
 
