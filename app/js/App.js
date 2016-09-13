@@ -68,7 +68,9 @@ class App extends React.Component {
   boxIsClicked(e) {
     console.log("The box was clicked");
     console.log(e.target);
+
     var clickedBox = e.target.getAttribute('value');
+    
     console.log(clickedBox);
 
     console.log(document.querySelector('.snippet-cont'))
@@ -77,7 +79,18 @@ class App extends React.Component {
     console.log(snippet);
 
     // grab the style attribute and switch it with a new var style that has no display: "none"
-    snippet.style = 'display';
+
+    if(snippet.getAttribute('style') === 'display:none') {
+      console.log('if statement display')
+      console.log(snippet.getAttribute('style'));
+      snippet.style = 'display';
+      
+    } else {
+      console.log('else statement display');
+      console.log(snippet.getAttribute('style'));
+      snippet.setAttribute('style', 'display');
+    }
+    
   }  
 
   renderChildren() {
