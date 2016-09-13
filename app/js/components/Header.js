@@ -19,7 +19,7 @@ class Header extends React.Component {
       <header>
 
        <div className="wrapper-title">
-          <p className="title" style={title}>TrySnippets</p>
+          <p className="title" style={title}>trysnippets</p>
        </div>
 
       </header>
