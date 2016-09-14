@@ -16,16 +16,28 @@ class Form extends React.Component {
       height: "300px",
       background: "gray",
       display: "inline-flex",
-      margin: "10px"
+      margin: "10px",
+      textAlign: "center"
     }
 
+    var wrapper = {
+      textAlign: "center"
+    }
 
+    var p = {
+      marginLeft: "auto",
+      marginRight: "auto"
+    }
     return (
-      <div className="col-sm-12" >
+      <div className="col-sm-12" style={wrapper}>
         <div className="wrapper">
-          <div className="wrapper-boxes text-center">
-            <div className="box col-md-2" style={box} onClick={this.props.boxIsClicked} value={0}><p>Box for snippet 1</p></div>
-            <div className="box col-md-2" style={box} onClick={this.props.boxIsClicked} value={1}><p>Box for snippet 2</p></div>          
+          <div className="wrapper-boxes">
+            <div className="box col-md-2" style={box} onClick={this.props.boxIsClicked} value={0}>
+              <p style={p}>Box for snippet 1</p>
+            </div>
+            <div className="box col-md-2" style={box} onClick={this.props.boxIsClicked} value={1}>
+              <p style={p}>Box for snippet 2</p>
+            </div>          
           </div>
           
         </div>
