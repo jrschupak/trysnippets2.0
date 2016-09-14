@@ -80,15 +80,16 @@ class App extends React.Component {
 
     // grab the style attribute and switch it with a new var style that has no display: "none"
 
-    if(snippet.getAttribute('style') === 'display:none') {
+    if(snippet.style.display == "none") {
       console.log('if statement display')
       console.log(snippet.getAttribute('style'));
-      snippet.style = 'display';
+      snippet.style = '';
       
     } else {
       console.log('else statement display');
+      console.log(snippet.innerText)
       console.log(snippet.getAttribute('style'));
-      snippet.setAttribute('style', 'display');
+      snippet.setAttribute('style', 'display:none');
     } //end of if statement
     
   }  
