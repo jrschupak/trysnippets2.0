@@ -26,7 +26,8 @@ class Form extends React.Component {
 
     var p = {
       marginLeft: "auto",
-      marginRight: "auto"
+      marginRight: "auto",
+      height: "20px"
     }
     return (
       <div className="col-sm-12" style={wrapper}>
