@@ -12,13 +12,18 @@ class Header extends React.Component {
     var title = {
       fontSize: "20px",
       color: "white",
-      padding: "20px",
       color: "black"
+    }
+
+    var wrapper = {
+      position: "absolute",
+      top: "0px",
+      left: "25px"
     }
     return (
       <header>
 
-       <div className="wrapper-title">
+       <div className="wrapper-title" style={wrapper}>
           <p className="title" style={title}>trysnippets</p>
        </div>
 
