@@ -10,27 +10,6 @@ class Form extends React.Component {
   }
 
   render() { 
-    var form = {
-      color: "white",
-      
-    }
-
-    var input = {
-        marginRight: "10px",
-        marginLeft: "20px",
-        position: "relative",
-        right: "20px"
-    }
-
-    var inputSpan = {
-      position: "relative",
-      right: "20px"
-    }
-
-    var submitBtn = {
-      color: "black",
-      margin: "50px"
-    }
 
     var box = {
       width: "300px",
