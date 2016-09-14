@@ -7,7 +7,7 @@ class Snippets extends React.Component {
   constructor () {
     super();
     this.state = {
-      snippet1: ["<div>This is snippet 1</div>",  "<div>Part2 of snippet</div>"],
+      snippet1: ["<div>This is snippet 1</div>",  "<div> part 2 of snippet 1 </div>"],
       snippet2: "<div>This is snippet 2</div>"
      }
     } 

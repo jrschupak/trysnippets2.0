@@ -12,13 +12,16 @@ class Header extends React.Component {
     var title = {
       fontSize: "20px",
       color: "white",
-      color: "black"
+      paddingLeft: "25px"
+      
     }
 
     var wrapper = {
       position: "absolute",
       top: "0px",
-      left: "25px"
+      left: "0px",
+      background: "black",
+      width: "100%"
     }
     return (
       <header>
