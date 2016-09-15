@@ -8,7 +8,7 @@ class Snippets extends React.Component {
     super();
     this.state = {
       snippet1: { snippetArr: [{id: 0, content: "contstructor () {"}, {id: 1, content:  "super();"}, {id: 2, content: "this.state = {"}, {id: 3, content: "}"}, {id: 4, content: "}"} ]},
-      snippet2: "<div>This is snippet 2</div>"
+      snippet2: { snippetArr: [{id:0, content: "<div>"}, {id: 2, content: "This is snippet 2"}, {id: 3, content: "</div>"}]}
      }
     } 
   
@@ -45,19 +45,24 @@ class Snippets extends React.Component {
 
     return (
       <div>
-        <div className="snippets-cont">
-          <p id={10} style={displayNone}>{this.state.snippet1[0]} <br/> {this.state.snippet1[1]}</p>
-          <p id={1} style={displayNone}>{this.state.snippet2}</p>
-        </div>
+        
 
         <div className="snippets-container " id={0} style={displayNone}>{this.state.snippet1.snippetArr.map(function(line) {
               console.log(line);
-              return <p  key={line.id} className='zip-comp' style={lines}>
+              return <p  key={line.id} style={lines}>
                        {line.content}
                        <br />
                      </p> 
               })}
 
+        </div>
+        <div className="snippets-container " id={1} style={displayNone}>{this.state.snippet2.snippetArr.map(function(line) {
+              console.log(line);
+              return <p  key={line.id} style={lines}>
+                       {line.content}
+                       <br />
+                     </p> 
+              })}
         </div>
 
 
