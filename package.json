@@ -70,7 +70,9 @@
     "start": "node app.js"
   },
   "dependencies": {
+    "babel-loader": "^6.2.5",
     "express": "^4.14.0",
+    "html-webpack-plugin": "^2.22.0",
     "webpack": "^1.13.2"
   }
 }
