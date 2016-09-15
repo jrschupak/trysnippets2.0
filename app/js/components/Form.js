@@ -37,7 +37,7 @@ class Form extends React.Component {
               <p style={p}>React function to set the initial state</p>
             </div>
             <div className="box col-md-2" style={box} onClick={this.props.boxIsClicked} value={1}>
-              <p style={p}>Basic <div> container</p>
+              <p style={p}>Basic "<div>" container</p>
             </div>          
           </div>
           
