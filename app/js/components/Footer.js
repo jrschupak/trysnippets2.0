@@ -19,7 +19,6 @@ class Footer extends React.Component{
       width: "100%",
       paddingLeft: "25px",
       paddingTop: "15px"
-
     }
 
     return (
