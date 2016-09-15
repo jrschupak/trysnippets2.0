@@ -34,10 +34,10 @@ class Form extends React.Component {
         <div className="wrapper">
           <div className="wrapper-boxes">
             <div className="box col-md-2" style={box} onClick={this.props.boxIsClicked} value={0}>
-              <p style={p}>React init state</p>
+              <p style={p}>React init state syntax</p>
             </div>
             <div className="box col-md-2" style={box} onClick={this.props.boxIsClicked} value={1}>
-              <p style={p}>Box for snippet 2</p>
+              <p style={p}>Basic div container</p>
             </div>          
           </div>
           
