@@ -22,7 +22,8 @@ class Form extends React.Component {
 
     var wrapper = {
       textAlign: "center",
-      marginTop: "150px"
+      marginTop: "150px",
+      height: "500px"
     }
 
     var p = {

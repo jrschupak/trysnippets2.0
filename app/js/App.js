@@ -104,8 +104,13 @@ class App extends React.Component {
 
 
   render() {
+
+    var main = {
+      width: "100%"
+    }
+
     return (
-      <div>
+      <div style={main}>
 
         <Header />
 

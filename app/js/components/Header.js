@@ -27,16 +27,14 @@ class Header extends React.Component {
     var header = {
       marginLeft: "auto",
       marginRight: "auto",
-      color: "orange",
+      color: "gray",
       height: "200px",
       marginBottom: "100px",
       marginTop: "150px"
     }
 
     var content = {
-      fontSize: "25px",
       textAlign: "center"
-
     }
 
     return (
@@ -46,7 +44,7 @@ class Header extends React.Component {
           <p className="title" style={title}>trysnippets</p>
        </div>
        <div className="header col-lg-12" style={header}> 
-        <div style={content} >trysnippets is a place to look up snippets of code to use, so you can save time</div>
+        <h1 style={content} >trysnippets is a place to look up snippets of code to use, so you can save time</h1>
        </div>
 
       </header>
