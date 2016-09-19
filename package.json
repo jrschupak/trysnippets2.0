@@ -20,6 +20,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.3.13",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-1": "^6.13.0",
     "babelify": "^7.2.0",
     "browser-sync": "^2.7.13",
     "browserify": "^12.0.1",
@@ -70,6 +71,7 @@
     "start": "node app.js"
   },
   "dependencies": {
+    "babel": "^6.5.2",
     "babel-loader": "^6.2.5",
     "express": "^4.14.0",
     "html-webpack-plugin": "^2.22.0",

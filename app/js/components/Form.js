@@ -10,6 +10,8 @@ class Form extends React.Component {
     this.state = {
       hover: false
     }
+
+    // this.styleChange = this.styleChange.bind(this)
   }
 
   componentWillMount(){
@@ -21,14 +23,15 @@ class Form extends React.Component {
 
   }
 
-  styleChange(){
+  styleChange = () => {
     console.log("hover function called")
     console.log(this.state.hover)
     this.setState({
       hover: !this.state.hover
     })
-    
   }
+
+  
   
 
   render() { 
