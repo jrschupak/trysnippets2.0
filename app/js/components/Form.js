@@ -12,23 +12,46 @@ class Form extends React.Component {
     }
   }
 
-  componentDidMount(){
-    console.log("hover, ", this.state.hover);
+  componentWillMount(){
+    console.log("hover (WILLMt), ", this.state.hover);
   }
 
-  toggleHover(){
-    this.setState({hover: !this.state.hover})
+  componentDidMount(){
+    console.log("hover (DIDMt), ", this.state.hover);
+
   }
+
+  styleChange(){
+    console.log("hover function called")
+    console.log(this.state.hover)
+    this.setState({
+      hover: !this.state.hover
+    })
+    
+  }
+  
 
   render() { 
 
-    var box = {
+    var box;
+    if (this.state.hover) {
+      box = {
+      width: "325px",
+      height: "325px",
+      background: "gray",
+      display: "inline-flex",
+      margin: "10px",
+      textAlign: "center"
+     }
+    } else {
+      box = {
       width: "300px",
       height: "300px",
       background: "gray",
       display: "inline-flex",
       margin: "10px",
       textAlign: "center"
+     }
     }
 
     var wrapper = {
@@ -46,7 +69,7 @@ class Form extends React.Component {
       <div className="col-sm-12" style={wrapper}>
         <div className="wrapper">
           <div className="wrapper-boxes">
-            <div className="box col-md-2" style={box} onClick={this.props.boxIsClicked} value={0}>
+            <div className="box col-md-2" style={box} onClick={this.props.boxIsClicked} value={0} onMouseEnter={this.styleChange} onMouseLeave={this.styleChange}>
               <h4 style={p}>React init state syntax</h4>
             </div>
             <div className="box col-md-2" style={box} onClick={this.props.boxIsClicked} value={1}>
