@@ -7,6 +7,17 @@ class Form extends React.Component {
 
   constructor(props) {
     super(props);
+    this.state = {
+      hover: false
+    }
+  }
+
+  componentDidMount(){
+    console.log("hover, ", this.state.hover);
+  }
+
+  toggleHover(){
+    this.setState({hover: !this.state.hover})
   }
 
   render() { 
