@@ -44,7 +44,7 @@ class Header extends React.Component {
           <p className="title" style={title}>trysnippets</p>
        </div>
        <div className="header col-lg-12" style={header}> 
-        <h1 style={content} >trysnippets is a place to look up snippets of code to use, so you can save time</h1>
+        <h1 style={content} >trysnippets saves you time by providing precoded snippets for you to use for free</h1>
        </div>
 
       </header>
