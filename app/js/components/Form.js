@@ -10,11 +10,11 @@ class Form extends React.Component {
   }
 
   componentWillMount(){
-    console.log("hover (WILLMt), ", this.state.hover);
+    
   }
 
   componentDidMount(){
-    console.log("hover (DIDMt), ", this.state.hover);
+    
 
   }
 
