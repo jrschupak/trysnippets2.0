@@ -7,11 +7,6 @@ class Form extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-      hover: false
-    }
-
-    // this.styleChange = this.styleChange.bind(this)
   }
 
   componentWillMount(){
@@ -21,14 +16,6 @@ class Form extends React.Component {
   componentDidMount(){
     console.log("hover (DIDMt), ", this.state.hover);
 
-  }
-
-  styleChange1 = () => {
-    console.log("hover function called")
-    console.log(this.state.hover)
-    this.setState({
-      hover: !this.state.hover
-    })
   }
 
   mouseEnter = (e) => {
@@ -48,18 +35,7 @@ class Form extends React.Component {
 
   render() { 
 
-    var box;
-    if (this.state.hover) {
-      box = {
-      width: "325px",
-      height: "325px",
-      background: "gray",
-      display: "inline-flex",
-      margin: "10px",
-      textAlign: "center"
-     }
-    } else {
-      box = {
+    var box = {
       width: "300px",
       height: "300px",
       background: "gray",
@@ -67,7 +43,7 @@ class Form extends React.Component {
       margin: "10px",
       textAlign: "center"
      }
-    }
+    
 
     var wrapper = {
       textAlign: "center",
