@@ -39,12 +39,13 @@ class Snippets extends React.Component {
 
     var lines = {
       color: "black",
-      width: "100%",
-      textAlign: "left"
+      width: "90%",
+      textAlign: "left",
+      paddingLeft: "20px"
     }
 
     return (
-      <div>
+      <div id="snippets-cont">
         
 
         <div className="snippets-container " id={0} style={displayNone}>{this.state.snippet1.snippetArr.map(function(line) {
