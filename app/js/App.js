@@ -118,9 +118,10 @@ class App extends React.Component {
 
         {this.renderChildren()}
 
-        <Footer />
+        
 
       </div>
+      
     );
   }
 

@@ -11,21 +11,21 @@ class Footer extends React.Component{
   render() {
 
     var footer = {
-      position: "relative",
-      top: "200px",
+  
       background: "#404040",
       color: "white",
       width: "100%",
+      height: "30px",
       paddingLeft: "25px",
       paddingTop: "15px",
       margin: "0px"
     }
 
     return (
-      <footer style={footer}>
-
-      &copy; 2016 trysnippets
-
+      <footer >
+        <p style={footer}>
+          &copy; 2016 trysnippets
+        </p>
       </footer>
     );
   }

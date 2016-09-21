@@ -13,7 +13,6 @@ class Header extends React.Component {
       fontSize: "20px",
       color: "white",
       paddingLeft: "25px"
-      
     }
 
     var wrapper = {
@@ -25,25 +24,27 @@ class Header extends React.Component {
     }
 
     var header = {
-      marginLeft: "auto",
-      marginRight: "auto",
       color: "gray",
       height: "200px",
       marginBottom: "100px",
-      marginTop: "150px"
+      marginTop: "150px",
     }
 
     var content = {
       textAlign: "center"
     }
 
+    var main = {
+      background: "none"
+    }
+
     return (
-      <header>
+      <header style={main}>
 
        <div className="wrapper-title" style={wrapper}>
           <p className="title" style={title}>trysnippets</p>
        </div>
-       <div className="header col-lg-12" style={header}> 
+       <div className="header col-lg-12 text-center" style={header}> 
         <h1 style={content} >trysnippets saves you time by providing precoded snippets for you to use for free</h1>
        </div>
 
