@@ -60,7 +60,9 @@ class Form extends React.Component {
 
     var btn = {
       display: "inline-block",
-      verticalAlign: "top"
+      verticalAlign: "top",
+      height: "300px",
+      width: "300px"
     }
 
     var row = {
@@ -71,18 +73,18 @@ class Form extends React.Component {
       <div className="col-sm-12 text-center" style={wrapper}>
         <div className="wrapper text-center">
           <div className="wrapper-boxes text-center">
-            <a href="#snippets-cont"><div className="box" style={box} onClick={this.props.boxIsClicked} value={0} onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>
+            <a href="#snippets-cont"><div className="box" style={box}  onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>
               <h4 style={p}>React init state syntax</h4>
             </div></a>
-            <a href="/display"><div className="box" style={box} onClick={this.props.boxIsClicked} value={1} onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>
+            <a href="/display"><div className="box" style={box}  onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>
               <h4 style={p}>Basic div container</h4>
             </div> </a>         
           </div>
         </div>
         <div className="row" style={row}>
           <div className="col-sm-12 text-center">
-            <button id="btnSearch" className="btn btn-primary btn-md center-block" style={btn} />
-            <button id="btnClear" className="btn btn-danger btn-md center-block" style={btn} />
+            <button id="btnSearch" className="btn btn-primary btn-md center-block" style={btn} onClick={this.props.boxIsClicked} value={0}>Hello World</button>
+            <button id="btnClear" className="btn btn-danger btn-md center-block" style={btn} onClick={this.props.boxIsClicked} value={1}>Hello World </button>
           </div>
         </div>
         
