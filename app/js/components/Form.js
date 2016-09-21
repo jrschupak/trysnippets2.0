@@ -41,7 +41,8 @@ class Form extends React.Component {
       background: "gray",
       display: "inline-flex",
       margin: "10px",
-      textAlign: "center"
+      textAlign: "center",
+      display: "none"
      }
     
 
@@ -62,7 +63,9 @@ class Form extends React.Component {
       display: "inline-block",
       verticalAlign: "top",
       height: "300px",
-      width: "300px"
+      width: "300px",
+      marginLeft: "10px",
+      marginRight: "10px"
     }
 
     var row = {
@@ -83,7 +86,7 @@ class Form extends React.Component {
         </div>
         <div className="row" style={row}>
           <div className="col-sm-12 text-center">
-            <button id="btnSearch" className="btn btn-primary btn-md center-block" style={btn} onClick={this.props.boxIsClicked} value={0}>Hello World</button>
+            <a href="/display"><button id="btnSearch" className="btn btn-primary btn-md center-block" style={btn} onClick={this.props.boxIsClicked} value={0}>Hello World</button></a>
             <button id="btnClear" className="btn btn-danger btn-md center-block" style={btn} onClick={this.props.boxIsClicked} value={1}>Hello World </button>
           </div>
         </div>
