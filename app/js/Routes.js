@@ -7,6 +7,7 @@ import CreateBrowserHistory        from 'history/lib/createBrowserHistory';
 import App                         from './App';
 import HomePage                    from './pages/HomePage';
 import SearchPage                  from './pages/SearchPage';
+import DisplayPage				   from './pages/DisplayPage';
 import NotFoundPage                from './pages/NotFoundPage';
 
 export default (
@@ -17,7 +18,7 @@ export default (
 
       <Route path="/" component={HomePage} />
       <Route path="/search" component={SearchPage} />
-
+      <Route path="/display" component={DisplayPage} />
       <Route path="*" component={NotFoundPage} />
 
     </Route>
