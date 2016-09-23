@@ -1,8 +1,9 @@
-import React 			from "react";
-import DocumentTitle	from "react-document-title";
-import {link}			from "react-router";
 
-class Snippet2 extends React.Component {
+import React 			    from "react";
+import DocumentTitle	from "react-document-title";
+import {link}			    from "react-router";
+
+class Snippet3 extends React.Component {
 
 	constructor(){
 		super();
@@ -36,8 +37,8 @@ class Snippet2 extends React.Component {
     	paddingBottom: "20px"
     }
 		return(
-			<DocumentTitle title="snippet2">
-				<section className="snippet2-page">
+			<DocumentTitle title="snippet3">
+				<section className="snippet3-page">
 					<h1></h1>
 					<a href="/"><button id="btnClear" className="btn btn-default btn-md" style={homeBtn}>Home</button></a>
 					<div className="snippets-container" style={snipCont} id={0} >{this.state.snippet2.snippetArr.map(function(line) {
@@ -47,11 +48,18 @@ class Snippet2 extends React.Component {
                                 <br />
                                </p> 
               		       })}
-          			</div>
+          </div>
 				</section>
 			</DocumentTitle>
 			)
 	}
 }
 
-export default Snippet2;
+export default Snippet3;
+
+
+
+
+
+
+
