@@ -22,13 +22,7 @@ class HomePage extends React.Component {
       <DocumentTitle title="Home">
         <section className="home-page">
           
-          <div>
-            <Link to="/display"></Link>
-          </div>
-
-          <div>
-            <Link to="/search"></Link>
-          </div>
+          <a href="/snippet1"><button id="btnSearch" className="btn btn-primary btn-md center-block" style={btn} onClick={this.props.boxIsClicked} value={0}>Hello World</button></a>
 
         </section>
       </DocumentTitle>
