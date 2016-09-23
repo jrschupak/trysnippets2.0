@@ -38,6 +38,8 @@ class Snippet2 extends React.Component {
 		return(
 			<DocumentTitle title="snippet2">
 				<section className="snippet2-page">
+					<h1></h1>
+					<a href="/"><button id="btnClear" className="btn btn-default btn-md" style={homeBtn}>Home</button></a>
 					<div className="snippets-container" style={snipCont} id={0} >{this.state.snippet2.snippetArr.map(function(line) {
               			console.log(line);
               			return <p  key={line.id} style={lines}>

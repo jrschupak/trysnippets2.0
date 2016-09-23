@@ -45,7 +45,7 @@ class Snippet1 extends React.Component {
         <section className="Snippet1">
           
           <div>
-            <h1 className="center-block">SNIPPET1</h1>
+            <h1 className="center-block">React.js constructor snippet</h1>
           </div>
           <a href="/"><button id="btnClear" className="btn btn-default btn-md" style={homeBtn}>Home</button></a>
           <div className="snippets-container" style={snipCont} id={0} >{this.state.snippet1.snippetArr.map(function(line) {
