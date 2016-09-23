@@ -25,14 +25,20 @@ class Snippet1 extends React.Component {
       textAlign: "left",
       paddingLeft: "20px"
     }
+
+    var homeBtn = {
+    	height: "50px",
+    	width: "100px",
+    	float: "right"
+    }
     return (
       <DocumentTitle title="Snippets">
         <section className="Snippet1">
-
+          
           <div>
-            <h1>SNIPPET1 Page</h1>
+            <h1 className="center-block">SNIPPET1</h1>
           </div>
-          <Snippets snippets={this.props.snippets}/>
+          <a href="/"><button id="btnClear" className="btn btn-default btn-md" style={homeBtn}>Home</button></a>
           <div className="snippets-container " id={0} >{this.state.snippet1.snippetArr.map(function(line) {
               console.log(line);
               return <p  key={line.id} style={lines}>

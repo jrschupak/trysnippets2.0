@@ -112,7 +112,7 @@ class App extends React.Component {
     return (
       <div style={main}>
 
-        <Header />
+      
 
         <Form snippets={this.state.displaySnippets}  isChecked={this.isChecked} boxIsClicked={this.boxIsClicked}/>
 
@@ -121,7 +121,7 @@ class App extends React.Component {
         
 
       </div>
-      
+
     );
   }
 
