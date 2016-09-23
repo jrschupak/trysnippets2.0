@@ -9,6 +9,7 @@ import HomePage                    from './pages/HomePage';
 import SearchPage                  from './pages/SearchPage';
 import DisplayPage				   from './pages/DisplayPage';
 import Snippet1  				   from './pages/Snippet1';
+import Snippet2  				   from './pages/Snippet2';
 import NotFoundPage                from './pages/NotFoundPage';
 
 export default (
@@ -21,6 +22,7 @@ export default (
       <Route path="/search" component={SearchPage} />
       <Route path="/display" component={DisplayPage} />
       <Route path="/snippet1" component={Snippet1} />
+      <Route path="/snippet2" component={Snippet2} />
       <Route path="*" component={NotFoundPage} />
 
     </Route>
