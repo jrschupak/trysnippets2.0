@@ -12,8 +12,7 @@ class Snippet1 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      snippet1: { snippetArr: [{id: 0, content: "contstructor ( ) {"}, {id: 1, content:  "super( );"}, {id: 2, content: "  this.state = {"}, {id: 3, content: "  }"}, {id: 4, content: " }"} ]},
-      snippet2: { snippetArr: [{id:0, content: "<div>"}, {id: 2, content: "This is snippet 2"}, {id: 3, content: "</div>"}]}
+      snippet1: { snippetArr: [{id: 0, content: "contstructor ( ) {"}, {id: 1, content:  "super( );"}, {id: 2, content: "  this.state = {"}, {id: 3, content: "  }"}, {id: 4, content: " }"} ]}
      }
   }
 
