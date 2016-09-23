@@ -37,7 +37,8 @@ class HomePage extends React.Component {
         <Header /> 
         <div className="row" style={row}>
           <div className="col-sm-12 text-center" >
-            <a href="/snippet1"><button id="btnClear" className="btn btn-primary btn-md center-block" style={btn} value={0}>React.js constructor to create states</button></a>
+            <Link to="/display"></Link>
+            <Link to="/snippet1"><button id="btnClear" className="btn btn-primary btn-md center-block" style={btn} value={0}>React.js constructor to create states</button></Link>
             <a href="/snippet2"><button id="btnClear" className="btn btn-danger btn-md center-block" style={btn}  value={1}>Hello World </button></a>
             <a href="/snippet3"><button id="btnClear" className="btn btn-success btn-md center-block" style={btn}  value={1}>Hello World </button></a>
             <a href="/snippet4"><button id="btnClear" className="btn btn-info btn-md center-block" style={btn}  value={1}>Hello World </button></a>
