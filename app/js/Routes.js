@@ -11,6 +11,7 @@ import DisplayPage				   from './pages/DisplayPage';
 import Snippet1  				   from './pages/Snippet1';
 import Snippet2  				   from './pages/Snippet2';
 import Snippet3  				   from './pages/Snippet3';
+import Snippet4  				   from './pages/Snippet4';
 import NotFoundPage                from './pages/NotFoundPage';
 
 export default (
@@ -25,6 +26,7 @@ export default (
       <Route path="/snippet1" component={Snippet1} />
       <Route path="/snippet2" component={Snippet2} />
       <Route path="/snippet3" component={Snippet3} />
+      <Route path="/snippet4" component={Snippet4} />
       <Route path="*" component={NotFoundPage} />
 
     </Route>
