@@ -7,7 +7,7 @@ class Snippet2 extends React.Component {
 	constructor(){
 		super();
 			this.state ={
-				snippet: { snippetArr: [{id:0, content: "<div>"}, {id: 2, content: "This is snippet 2"}, {id: 3, content: "</div>"}]}
+				snippet: { snippetArr: [{id:0, content: "<div>"}, {id: 2, content: "<p>"}, {id: 3, content: "Your paragraphs content"}, {id: 4, content: "</p>"}, {id: 5, content: "</div>"}]}
 			}
 	}
 
