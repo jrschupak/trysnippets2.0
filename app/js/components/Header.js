@@ -12,7 +12,9 @@ class Header extends React.Component {
     var title = {
       fontSize: "20px",
       color: "white",
-      paddingLeft: "25px"
+      paddingLeft: "25px",
+      paddingTop: "15px",
+      paddingBottom: "15px"
     }
 
     var wrapper = {
