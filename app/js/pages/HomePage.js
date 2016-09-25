@@ -40,8 +40,8 @@ class HomePage extends React.Component {
             <Link to="/snippet1"><button id="btnClear" className="btn btn-primary btn-md center-block" style={btn} value={0}>React.js <br /> constructor to create states</button></Link>
             <Link to="/snippet2"><button id="btnClear" className="btn btn-danger btn-md center-block" style={btn}  value={1}>HTML <br /> Basic container with paragraph tags </button></Link>
             <Link to="/snippet3"><button id="btnClear" className="btn btn-success btn-md center-block" style={btn}  value={1}>CSS <br /> @media syntax for responsive design</button></Link>
-            <Link to="/snippet4"><button id="btnClear" className="btn btn-info btn-md center-block" style={btn}  value={1}>Hello World </button></Link>
-            <Link to="/snippet5"><button id="btnClear" className="btn btn-warning btn-md center-block" style={btn}  value={1}>Hello World </button></Link>
+            <Link to="/snippet4"><button id="btnClear" className="btn btn-warning btn-md center-block" style={btn}  value={1}>JavaScript <br /> Math.random function </button></Link>
+            <Link to="/snippet5"><button id="btnClear" className="btn btn-info btn-md center-block" style={btn}  value={1}>Hello World </button></Link>
           </div>
         </div>
         </section>

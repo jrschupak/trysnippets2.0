@@ -36,8 +36,8 @@ class Snippet5 extends React.Component {
     	paddingBottom: "20px"
     }
 		return(
-			<DocumentTitle title="snippet3">
-				<section className="snippet3-page">
+			<DocumentTitle title="snippet5">
+				<section className="snippet5-page">
 					<h1></h1>
 					<a href="/"><button id="btnClear" className="btn btn-default btn-md" style={homeBtn}>Home</button></a>
 					<div className="snippets-container" style={snipCont} id={0} >{this.state.snippet.snippetArr.map(function(line) {

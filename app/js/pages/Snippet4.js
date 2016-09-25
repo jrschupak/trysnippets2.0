@@ -8,7 +8,7 @@ class Snippet4 extends React.Component {
 	constructor(){
 		super();
 			this.state ={
-				snippet: { snippetArr: [{id:0, content: "<div>"}, {id: 2, content: "This is snippet 2"}, {id: 3, content: "</div>"}]}
+				snippet: { snippetArr: [{id:0, content: "array[Math.floor(Math.random()*(10-0)+0)];"}]}
 			}
 	}
 
@@ -37,9 +37,9 @@ class Snippet4 extends React.Component {
     	paddingBottom: "20px"
     }
 		return(
-			<DocumentTitle title="snippet3">
-				<section className="snippet3-page">
-					<h1></h1>
+			<DocumentTitle title="snippet4">
+				<section className="snippet4-page">
+					<h1>Math.random function</h1>
 					<a href="/"><button id="btnClear" className="btn btn-default btn-md" style={homeBtn}>Home</button></a>
 					<div className="snippets-container" style={snipCont} id={0} >{this.state.snippet.snippetArr.map(function(line) {
               			console.log(line);
