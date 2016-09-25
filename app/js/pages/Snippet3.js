@@ -39,7 +39,7 @@ class Snippet3 extends React.Component {
 		return(
 			<DocumentTitle title="snippet3">
 				<section className="snippet3-page">
-					<h1></h1>
+					<h1>@media syntax for responsive design</h1>
 					<a href="/"><button id="btnClear" className="btn btn-default btn-md" style={homeBtn}>Home</button></a>
 					<div className="snippets-container" style={snipCont} id={0} >{this.state.snippet.snippetArr.map(function(line) {
               			console.log(line);
