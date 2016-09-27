@@ -13,7 +13,7 @@ import Snippet2  				   from './pages/Snippet2';
 import Snippet3  				   from './pages/Snippet3';
 import Snippet4  				   from './pages/Snippet4';
 import Snippet5            from './pages/Snippet5';
-import IframeTest 			   from './pages/iframeTest';
+import IframeTest 			   from './pages/IframeTest';
 import NotFoundPage                from './pages/NotFoundPage';
 
 export default (
