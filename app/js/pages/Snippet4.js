@@ -8,7 +8,7 @@ class Snippet4 extends React.Component {
 	constructor(){
 		super();
 			this.state ={
-				snippet: { snippetArr: [{id:0, content: "array[Math.floor(Math.random()*(10-0)+0)];"}]}
+				snippet: { snippetArr: [{id:0, content: "array[Math.floor(Math.random( )*(10-0)+0)];"}]}
 			}
 	}
 
@@ -49,6 +49,9 @@ class Snippet4 extends React.Component {
                                </p> 
               		       })}
           </div>
+          <iframe scrolling="true" width="800px" vspace="100px" height="100px">
+            
+          </iframe>
 				</section>
 			</DocumentTitle>
 			)
