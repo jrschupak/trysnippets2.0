@@ -12,7 +12,8 @@ import Snippet1  				   from './pages/Snippet1';
 import Snippet2  				   from './pages/Snippet2';
 import Snippet3  				   from './pages/Snippet3';
 import Snippet4  				   from './pages/Snippet4';
-import Snippet5  				   from './pages/Snippet5';
+import Snippet5            from './pages/Snippet5';
+import IframeTest 			   from './pages/iframeTest';
 import NotFoundPage                from './pages/NotFoundPage';
 
 export default (
@@ -29,6 +30,7 @@ export default (
       <Route path="/snippet3" component={Snippet3} />
       <Route path="/snippet4" component={Snippet4} />
       <Route path="/snippet5" component={Snippet5} />
+      <Route path="/iframeTest" component={IframeTest} />
       <Route path="*" component={NotFoundPage} />
 
     </Route>

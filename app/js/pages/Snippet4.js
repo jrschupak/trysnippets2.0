@@ -2,6 +2,7 @@
 import React 			    from "react";
 import DocumentTitle	from "react-document-title";
 import {link}			    from "react-router";
+import Iframe         from "react-iframe"
 
 class Snippet4 extends React.Component {
 
@@ -49,9 +50,9 @@ class Snippet4 extends React.Component {
                                </p> 
               		       })}
           </div>
-          <iframe scrolling="true" width="800px" vspace="100px" height="100px">
+          <Iframe url="http://www.try-snippets/heroku.com/iframeTest" scrolling="true" width="800px" vspace="100px" height="100px">
             
-          </iframe>
+          </Iframe>
 				</section>
 			</DocumentTitle>
 			)
