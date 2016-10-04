@@ -38,6 +38,7 @@ class Snippet5 extends React.Component {
     	top: "150px",
     	paddingTop: "20px",
     	paddingBottom: "20px",
+      overflow: "scroll"
     }
 
     var col4 = {
