@@ -28,7 +28,8 @@ class Snippet5 extends React.Component {
     	width: "100px",
     	position: "absolute",
     	right: "10px",
-    	top: "50px"
+    	top: "50px",
+      zIndex: "1"
     }
 
     var snipCont = {
@@ -52,7 +53,8 @@ class Snippet5 extends React.Component {
 			<DocumentTitle title="snippet5">
 				<section className="snippet5-page">
 					<h1></h1>
-					<a href="/"><button id="btnClear" className="btn btn-default btn-md" style={homeBtn}>Home</button></a>
+					
+          <a href="/"><button id="btnClear" className="btn btn-default btn-md" style={homeBtn}>Home</button></a>
           
           <div className="HTML col-lg-4" style={col4}>
             <p style={title}>HTML</p>
