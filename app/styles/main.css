@@ -35,6 +35,7 @@ body {
 .snippets-container {
   height: 300px;
   width: 400px;
+  overflow: scroll;
 }
 
 @media(max-width: 1200px){
