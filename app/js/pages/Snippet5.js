@@ -7,8 +7,11 @@ class Snippet5 extends React.Component {
 	constructor(){
 		super();
 			this.state = {
-				snippet: { snippetArr: [{id:0, content: "<div>"}, {id: 2, content: "This is snippet 2"}, {id: 3, content: "</div>"}]}
-			}
+				snippet: { 
+          snippetHTML: [{id:0, content: "<div class='name-of-class'>"}, {id: 2, content: "<input type='text' class='one'><br><br>"}, {id: 3, content: "<input type='text' class='two'><br><br>"}, {id: 4, content: "<input type='text' class='three'><br><br>"}, {id: 5, content: "<button class='done-button'>DONE</button>"}, {id: 6, content: "</div>"}],
+          snippetJS: [{id:0, content:'var doneButton = document.querySelector(".done-button");'}, {id:1, content:'var input = document.querySelectorAll(".one, .two, .three");'}, {id:3, content:'doneButton.addEventListener("click", function(){'}, {id:4, content:'for(i = 0; i < input.length; i++){'}, {id:5, content:'if(!iAmInput[i].value.length){'}, {id:6, content:'return alert("You Must fill in all the "I am" statements to continue")'}, {id:7, content:'} else {'}, {id:8, content:'if(input[4].value.length){'}, {id:9, content:'var container = document.querySelector(".name-of-class");'}, {id:10, content: 'container.style.display = "none";'}, {id:11, content:'}'}, {id:12, content:'}'}, {id:13, content:'}'}]
+        }             
+      }
 	}
 
 	render() {
@@ -40,7 +43,15 @@ class Snippet5 extends React.Component {
 				<section className="snippet5-page">
 					<h1></h1>
 					<a href="/"><button id="btnClear" className="btn btn-default btn-md" style={homeBtn}>Home</button></a>
-					<div className="snippets-container" style={snipCont} id={0} >{this.state.snippet.snippetArr.map(function(line) {
+					<div className="snippets-container" style={snipCont} id={0} >{this.state.snippet.snippetHTML.map(function(line) {
+                    console.log(line);
+                    return <p  key={line.id} style={lines}>
+                                {line.content}
+                                <br />
+                               </p> 
+                         })}
+          </div>
+          <div className="snippets-container CSS" style={snipCont} id={0} >{this.state.snippet.snippetJS.map(function(line) {
               			console.log(line);
               			return <p  key={line.id} style={lines}>
                                 {line.content}
