@@ -50,7 +50,7 @@ class Snippet4 extends React.Component {
                                </p> 
               		       })}
           </div>
-          <Iframe url="http://try-snippets.herokuapp.com/" scrolling="true" width="600px" vspace="100px" height="500px">
+          <Iframe url="" scrolling="true" width="600px" vspace="100px" height="500px">
             
           </Iframe>
 				</section>
