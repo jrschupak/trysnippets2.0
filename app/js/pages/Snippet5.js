@@ -36,26 +36,53 @@ class Snippet5 extends React.Component {
     	position: "relative",
     	top: "150px",
     	paddingTop: "20px",
-    	paddingBottom: "20px"
+    	paddingBottom: "20px",
+    }
+
+    var col3 = {
+      margin: "0px"
+    }
+    var title = {
+      position: "relative",
+      top: "150px"
     }
 		return(
 			<DocumentTitle title="snippet5">
 				<section className="snippet5-page">
 					<h1></h1>
 					<a href="/"><button id="btnClear" className="btn btn-default btn-md" style={homeBtn}>Home</button></a>
-          <div className="snippets-container col-sm-3" style={snipCont} id={0} >{this.state.snippet.snippetHTML.map(function(line) {
+          
+          <div className="HTML col-lg-4" style={col3}>
+            <p style={title}>HTML</p>
+            <div className="snippets-container " style={snipCont} id={0} >
+
+              {this.state.snippet.snippetHTML.map(function(line) {
                     console.log(line);
                     return <p  key={line.id} style={lines}>
                                 {line.content}
                                 <br />
                                </p> 
                          })}
+            </div>
+          </div> 
+          <div className="JS col-lg-4" style={col3}>
+           <p style={title}>JS</p>
+           <div className="snippets-container" style={snipCont} id={0}>
+            
+            {this.state.snippet.snippetJS.map(function(line) {
+                    console.log(line);
+                    return <p  key={line.id} style={lines}>
+                                {line.content}
+                                <br />
+                               </p> 
+                         })}
+           </div>
           </div>
 
-          <div className="CSS col-sm-3"  >
-
-           <div className="snippets-container " style={snipCont} id={0}>
-            <p>JS</p>
+          <div className="JS col-lg-4" style={col3}>
+           <p style={title}>CSS</p>
+           <div className="snippets-container" style={snipCont} id={0}>
+            CSS PLACE HOLDER CONTENT
             {this.state.snippet.snippetJS.map(function(line) {
               			console.log(line);
               			return <p  key={line.id} style={lines}>
