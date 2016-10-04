@@ -33,6 +33,13 @@ body {
   padding: 0px;
   margin: 0px; }
 
+  @media(max-width: 1200px){
+  .buttons {
+    position: relative;
+    top: 100px;
+  }
+}
+
 /* line 1, /Users/jon/sites/react-rocket-boilerplate-master/app/styles/elements/_header.scss */
 header {
   height: 50px;
