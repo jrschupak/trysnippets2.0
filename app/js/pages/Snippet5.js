@@ -43,7 +43,7 @@ class Snippet5 extends React.Component {
 				<section className="snippet5-page">
 					<h1></h1>
 					<a href="/"><button id="btnClear" className="btn btn-default btn-md" style={homeBtn}>Home</button></a>
-					<div className="snippets-container" style={snipCont} id={0} >{this.state.snippet.snippetHTML.map(function(line) {
+          <div className="snippets-container col-sm-3" style={snipCont} id={0} >{this.state.snippet.snippetHTML.map(function(line) {
                     console.log(line);
                     return <p  key={line.id} style={lines}>
                                 {line.content}
@@ -51,14 +51,21 @@ class Snippet5 extends React.Component {
                                </p> 
                          })}
           </div>
-          <div className="snippets-container CSS" style={snipCont} id={0} >{this.state.snippet.snippetJS.map(function(line) {
+
+          <div className="CSS col-sm-3"  >
+
+           <div className="snippets-container " style={snipCont} id={0}>
+            <p>JS</p>
+            {this.state.snippet.snippetJS.map(function(line) {
               			console.log(line);
               			return <p  key={line.id} style={lines}>
                                 {line.content}
                                 <br />
                                </p> 
               		       })}
+           </div>
           </div>
+          
 				</section>
 			</DocumentTitle>
 			)
