@@ -31,11 +31,11 @@ body {
   color: #333;
   background-color: #eee;
    }
-   
+
 @media(max-width: 1200px){
   .buttons {
     position: relative;
-    top: 100px;
+    top: 150px;
   }
 }
 
