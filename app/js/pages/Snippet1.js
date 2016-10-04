@@ -38,7 +38,10 @@ class Snippet1 extends React.Component {
     	position: "relative",
     	top: "150px",
     	paddingTop: "20px",
-    	paddingBottom: "20px"
+    	paddingBottom: "20px",
+      overflow: "auto",
+      height: "300px",
+      width: "400px"
     }
     return (
       <DocumentTitle title="Snippets">

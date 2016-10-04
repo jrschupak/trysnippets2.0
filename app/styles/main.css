@@ -32,6 +32,11 @@ body {
   background-color: #eee;
    }
 
+.snippets-container {
+  height: 300px;
+  width: 400px;
+}
+
 @media(max-width: 1200px){
   .buttons {
     position: relative;
