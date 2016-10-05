@@ -17,6 +17,11 @@ class Snippet5 extends React.Component {
 
 	render() {
 
+  var page = {
+    background: "gray",
+    margin: "0px",
+    padding: '0px'
+  }
 	var lines = {
       width: "90%",
       textAlign: "left",
@@ -35,11 +40,11 @@ class Snippet5 extends React.Component {
     var snipCont = {
     	background: "black",
     	color: "yellow",
-    	position: "relative",
-    	top: "150px",
+   
     	paddingTop: "20px",
     	paddingBottom: "20px",
-      overflow: "scroll"
+      overflow: "scroll",
+      height: "300px"
     }
 
     var col4 = {
@@ -60,31 +65,31 @@ class Snippet5 extends React.Component {
       textAlign: "center",
       paddingTop: "-20px",
       paddingBottom: "30px",
+      marginTop: '400px',
       marginLeft: "auto",
       marginRight: "auto",
-      position: "relative",
-      top: "500px"
+    }
+
+    var form = {
+      paddingTop: "50px"
     }
 
     var input = {
       width: "75%",
-      position: 'relative',
-      bottom: '250px'
     }
 
     var doneBtn = {
       color: 'black',
       fontSize: "15px",
-      position: 'relative',
-      bottom: '250px'
+    
     }
 		return(
-			<DocumentTitle title="snippet5">
-				<section className="snippet5-page">
+			<DocumentTitle title="snippet5" style={page}>
+				<section className="snippet5-page" >
 					<h1>Fixed container to grab users input and will only disappear when user has filled in all fields and clicked done.</h1>
 					
           <a href="/"><button id="btnClear" className="btn btn-default btn-md" style={homeBtn}>Home</button></a>
-          
+          <div className="wrapper">
           <div className="HTML col-lg-4" style={col4}>
             <p style={title}>HTML</p>
             <div className="snippets-container " style={snipCont} id={0} >
@@ -125,11 +130,13 @@ class Snippet5 extends React.Component {
               		       })}
            </div>
           </div>
+          </div>
           <div className='name-of-class' style={inputWrapper}>
-            <input type='text' style={input} className='one' /><br/><br/>
-            <input type='text' style={input} className='two' /><br/><br/>
-            <input type='text' style={input} className='three' /><br/><br/>
-            
+            <form style={form}>
+              <input type='text' style={input} className='one' /><br/><br/>
+              <input type='text' style={input} className='two' /><br/><br/>
+              <input type='text' style={input} className='three' /><br/><br/>
+            </form>
             <button class='done-button' style={doneBtn}>DONE</button>
           </div>
 				</section>
