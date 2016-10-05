@@ -28,7 +28,7 @@ class Snippet5 extends React.Component {
     	width: "100px",
     	position: "absolute",
     	right: "10px",
-    	top: "50px",
+    	top: "100px",
       zIndex: "1"
     }
 
@@ -47,12 +47,40 @@ class Snippet5 extends React.Component {
     }
     var title = {
       position: "relative",
-      top: "150px"
+      top: "150px",
+      fontSize: "20px"
+    }
+
+    var inputWrapper = {
+      background: "rgba(0, 0, 0, 0.8)",
+      color: "black",
+      width: "700px",
+      height: "400px",
+      fontSize: "20px",
+      textAlign: "center",
+      paddingTop: "-20px",
+      paddingBottom: "30px",
+      margin: "0px",
+      position: "relative",
+      top: "500px"
+    }
+
+    var input = {
+      width: "75%",
+      position: 'relative',
+      bottom: '250px'
+    }
+
+    var doneBtn = {
+      color: 'black',
+      fontSize: "15px",
+      position: 'relative',
+      bottom: '250px'
     }
 		return(
 			<DocumentTitle title="snippet5">
 				<section className="snippet5-page">
-					<h1></h1>
+					<h1>Fixed container to grab users input and will only disappear when user has filled in all fields and clicked done.</h1>
 					
           <a href="/"><button id="btnClear" className="btn btn-default btn-md" style={homeBtn}>Home</button></a>
           
@@ -96,7 +124,13 @@ class Snippet5 extends React.Component {
               		       })}
            </div>
           </div>
-          
+          <div className='name-of-class' style={inputWrapper}>
+            <input type='text' style={input} className='one' /><br/><br/>
+            <input type='text' style={input} className='two' /><br/><br/>
+            <input type='text' style={input} className='three' /><br/><br/>
+            
+            <button class='done-button' style={doneBtn}>DONE</button>
+          </div>
 				</section>
 			</DocumentTitle>
 			)
