@@ -17,10 +17,8 @@ class Snippet5 extends React.Component {
 
 	render() {
 
-  var page = {
-    background: "gray",
-    margin: "0px",
-    padding: '0px'
+  var wrapper = {
+    marginTop: "50px"
   }
 	var lines = {
       width: "90%",
@@ -52,7 +50,7 @@ class Snippet5 extends React.Component {
     }
     var title = {
       position: "relative",
-      top: "150px",
+      top: "0px",
       fontSize: "20px"
     }
 
@@ -84,12 +82,12 @@ class Snippet5 extends React.Component {
     
     }
 		return(
-			<DocumentTitle title="snippet5" style={page}>
+			<DocumentTitle title="snippet5" >
 				<section className="snippet5-page" >
 					<h1>Fixed container to grab users input and will only disappear when user has filled in all fields and clicked done.</h1>
 					
           <a href="/"><button id="btnClear" className="btn btn-default btn-md" style={homeBtn}>Home</button></a>
-          <div className="wrapper">
+          <div className="wrapper" style={wrapper}>
           <div className="HTML col-lg-4" style={col4}>
             <p style={title}>HTML</p>
             <div className="snippets-container " style={snipCont} id={0} >
