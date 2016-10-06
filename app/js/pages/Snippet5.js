@@ -38,11 +38,11 @@ class Snippet5 extends React.Component {
     var snipCont = {
     	background: "black",
     	color: "yellow",
-   
     	paddingTop: "20px",
     	paddingBottom: "20px",
       overflow: "scroll",
-      height: "300px"
+      height: "300px",
+      border: '5px solid gray'
     }
 
     var col4 = {

@@ -33,7 +33,8 @@ class Snippet2 extends React.Component {
     	position: "relative",
     	top: "150px",
     	paddingTop: "20px",
-    	paddingBottom: "20px"
+    	paddingBottom: "20px",
+      border: '5px solid gray'
     }
 		return(
 			<DocumentTitle title="snippet2">
