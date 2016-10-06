@@ -19,8 +19,12 @@ class HomePage extends React.Component {
   }
 
   render() {
+  var page = {
+    background: '#202020'
+  }
     var row = {
-      height: "50px"
+      height: "50px",
+      background: "#202020"
     }
 
     var btn = {
@@ -33,7 +37,7 @@ class HomePage extends React.Component {
 
     return (
       <DocumentTitle title="Home">
-        <section className="home-page">
+        <section className="home-page" style={page}>
         
         <Header /> 
         

@@ -1,3 +1,6 @@
+html {
+  background: #202020;
+}
 /* line 1, /Users/jon/sites/react-rocket-boilerplate-master/app/styles/_typography.scss */
 p {
   margin-bottom: 1em; }

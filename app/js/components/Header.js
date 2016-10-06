@@ -26,10 +26,13 @@ class Header extends React.Component {
     }
 
     var header = {
-      color: "gray",
+      color: "white",
+      background: '#202020',
       height: "200px",
+      paddingTop: '100px',
+      paddingBottom: '100px',
       marginBottom: "100px",
-      marginTop: "150px",
+      marginTop: "50px"
     }
 
     var content = {
@@ -37,7 +40,7 @@ class Header extends React.Component {
     }
 
     var main = {
-      background: "none"
+      background: "#202020"
     }
 
     return (
