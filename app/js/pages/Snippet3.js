@@ -13,6 +13,17 @@ class Snippet3 extends React.Component {
 	}
 
 	render() {
+  var page = {
+    background: '#202020'
+  }
+
+  var h1 = {
+    margin: '0px',
+    color: 'white',
+    paddingTop: "50px",
+    paddingLeft: '25px',
+    paddingRight: '100px'
+  }
 
 	var lines = {
       width: "90%",
@@ -29,20 +40,20 @@ class Snippet3 extends React.Component {
     }
 
     var snipCont = {
-    	background: "black",
+    	background: "#303030",
     	color: "yellow",
     	position: "relative",
     	top: "150px",
     	paddingTop: "20px",
     	paddingBottom: "20px",
-      border: '5px solid gray'
+      border: '5px solid black'
     }
 		return(
 			<DocumentTitle title="snippet3">
-				<section className="snippet3-page">
-					<h1>@media syntax for responsive design</h1>
+				<section className="snippet3-page" style={page}>
+					<h1 style={h1}>@media syntax for responsive design</h1>
 					<a href="/"><button id="btnClear" className="btn btn-default btn-md" style={homeBtn}>Home</button></a>
-					<div className="snippets-container" style={snipCont} id={0} >{this.state.snippet.snippetArr.map(function(line) {
+					<div className="snippets-container col-lg-4" style={snipCont} id={0} >{this.state.snippet.snippetArr.map(function(line) {
               			console.log(line);
               			return <p  key={line.id} style={lines}>
                                 {line.content}

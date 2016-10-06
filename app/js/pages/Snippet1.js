@@ -17,6 +17,16 @@ class Snippet1 extends React.Component {
   }
 
   render() {
+    var page = {
+    background: '#202020'
+    }
+    var h1 = {
+    margin: '0px',
+    color: 'white',
+    paddingTop: "50px",
+    paddingLeft: '25px',
+    paddingRight: '100px'
+    }
 
   	var lines = {
       width: "90%",
@@ -45,10 +55,10 @@ class Snippet1 extends React.Component {
     }
     return (
       <DocumentTitle title="Snippets">
-        <section className="Snippet1">
+        <section className="Snippet1" style={page}>
           
           <div>
-            <h1 className="center-block">React.js constructor snippet</h1>
+            <h1 className="center-block" style={h1}>React.js constructor snippet</h1>
           </div>
           <a href="/"><button id="btnClear" className="btn btn-default btn-md" style={homeBtn}>Home</button></a>
           <div className="snippets-container" style={snipCont} id={0} >{this.state.snippet1.snippetArr.map(function(line) {
